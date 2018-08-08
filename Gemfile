@@ -17,6 +17,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.6.0'
   gem 'rspec-rails', '~> 3.7.2'
   gem 'rubocop', '~> 0.52.1'
+  gem "unicode-display_width", ">= 1.3.3"
 end
 
 group :development do
