@@ -3,14 +3,14 @@ class ContentsController < OpenReadController
 
   # GET /contents
   def index
-    @contents = current_user.contents.all
+    @contents = Content.all
 
     render json: @contents
   end
 
   # GET /contents/1
   def show
-    render json: @content.find(params[:id])
+    render json: @content
   end
 
   # POST /contents
